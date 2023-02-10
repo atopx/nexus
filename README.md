@@ -38,7 +38,7 @@ func main() {
 	n := nexus.NewNexus(nexus.WithStartTime(time.Now()))
 	wg := new(sync.WaitGroup)
 	for i := 0; i < 20; i++ {
-		go func(n *nexus.Nexus, seq int, wg *sync.WaitGroup) {
+		go func(n *nexus.Nexus, wg *sync.WaitGroup) {
             wg.Add(1)
 			part, _ := n.NextId()
 			defer n.Recover(part)
