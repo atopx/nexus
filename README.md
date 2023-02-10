@@ -8,7 +8,7 @@ This is a package for generating unique IDs in a distributed environment. It is 
 
 - Generates unique IDs in a distributed environment
 - Based on Twitter's Snowflake algorithm
-- Theoretical maximum of 174 unique IDs
+- Theoretical maximum of 174 years unique IDs
 - Excellent performance
 - Written in Go programming language version 1.19
 
